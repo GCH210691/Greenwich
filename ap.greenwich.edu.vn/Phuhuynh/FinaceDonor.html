@@ -1,0 +1,259 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	FPT University Academic Portal
+</title><link rel="Stylesheet" href="../JavaScript/jquery.alerts.css" type="text/css" /><link rel="Stylesheet" href="../fu.css" type="text/css" /><link rel="Stylesheet" href="../JavaScript/jquery.css" type="text/css" />
+
+    <script src="../JavaScript/jquery_002.js" type="text/javascript"></script>
+
+    <script src="../JavaScript/jquery_003.js" type="text/javascript"></script>
+
+    <script src="../JavaScript/jquery.js" type="text/javascript"></script>
+
+    <script src="../JavaScript/jquery-ui.js" type="text/javascript"></script>
+
+    <script src="../JavaScript/jquery.alerts.js" type="text/javascript"></script>
+    <link rel="Stylesheet" href="../Content/bootstrap.css" type="text/css" /><link rel="Stylesheet" href="../Content/bootstrap.min.css" type="text/css" /><link rel="Stylesheet" href="../Content/bootstrap-theme.min.css" type="text/css" />
+
+    <style type="text/css">
+        .style1 {
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+	
+    <div class="container" style="    width: 80%;">
+        <div class="row">
+            <div class="col-md-12">
+                <img src='https://ap.greenwich.edu.vn/FGW_logo_d.jpg' style="display: block; margin-left: auto; margin-right: auto; margin-top: 15px; width: 300px;" alt="" />
+            </div>
+
+        </div>
+        <br />
+        <br />
+        <div class="row">
+            <div class="col-md-12">
+                <span style="text-align: center; display: flex; justify-content: center; align-items: center; font-weight: 900; font-size: x-large; color: #003399">Academic Portal</span>
+
+            </div>
+
+        </div>
+        <br />
+        <br />
+        <div class="row">
+            <div class="col-md-12">
+                <form name="aspnetForm" method="post" action="./FinaceDonor.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=VwpgX4Vm2_PpGKg02p8ZywVLkxgNgMb5mECJmbUOa7Q_A9OWP755cifgA1G_jxLJ5b3AE8TyY709kHfzvbA6tpUFyi7Rb0kWodd8ULgyJKw1&amp;t=638240595755514788" type="text/javascript"></script>
+
+
+<script src="/WebResource.axd?d=oN_NavYBYDqULmYM9-UDJ05Sp4tSclaBhwEGPfvwzYkSetmRZCkpd17aAgW_TYuttVic0kYZBuGqKFwScdWBXYhuxgR_V69pjjcVD9mCx301&amp;t=638240595755514788" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="F0DC6585" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="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" />
+</div>
+                    <div id="ctl00_divUser" style="float: right; margin-right: 16px;">
+                        <a href="?view=user">
+                            <span id="ctl00_lblLogIn">DatDTGCH210691+</span></a> | <a href="?logout=true">logout</a>
+                    </div>
+                    <span id="ctl00_lblNavigation" style="font-size: medium"><a href='Donor.html'>Trang chủ</a>&nbsp;|&nbsp;<b>Tiền nộp</b></span>
+                    <hr />
+                    <div>
+                        
+
+<h2><span id="ctl00_mainContent_lblTitle">Báo cáo tình trạng nộp tiền của sinh viên</span></h2>
+<table id="example" style="width: 100%">
+       
+	<thead>
+		<tr>
+			<th>Invoice No</th>
+			<th>RollNumber</th>
+			<th>Term Name</th>
+			<th>Invoice Date</th>
+			<th>Amount</th>
+			<th>Note</th>
+
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr>
+			<td><span class='label label-success'>137514AA/21E</span></td>
+			<td><span class='label label-info'>GCH210691</span></td>
+			<td><span class='label label-primary'>Summer 2023</span></td>
+			<td><span class='label label-default'>05/09/2022</span></td>
+			<td><span class='label label-danger'>22,130,000</span></td>
+			<td><span>HK6</span></td>
+		</tr>
+
+	<tbody>
+		<tr>
+			<td><span class='label label-success'>31554-K23TAA</span></td>
+			<td><span class='label label-info'>GCH210691</span></td>
+			<td><span class='label label-primary'>Summer 2023</span></td>
+			<td><span class='label label-default'>27/04/2023</span></td>
+			<td><span class='label label-danger'>22,130,000</span></td>
+			<td><span>HK5</span></td>
+		</tr>
+		
+	<tbody>
+		<tr>
+			<td><span class='label label-success'>79172-K22TAA</span></td>
+			<td><span class='label label-info'>GCH210691</span></td>
+			<td><span class='label label-primary'>Spring 2023</span></td>
+			<td><span class='label label-default'>01/01/2023</span></td>
+			<td><span class='label label-danger'>22,130,000</span></td>
+			<td><span>HK4</span></td>
+		</tr>
+		
+	<tbody>
+		<tr>
+			<td><span class='label label-success'>32083-K22TAA</span></td>
+			<td><span class='label label-info'>GCH210691</span></td>
+			<td><span class='label label-primary'>Fall 2022</span></td>
+			<td><span class='label label-default'>23/08/2022</span></td>
+			<td><span class='label label-danger'>22,130,000</span></td>
+			<td><span>HK3</span></td>
+		</tr>
+		
+	<tbody>
+		<tr>
+			<td><span class='label label-success'>67473AA/21E</span></td>
+			<td><span class='label label-info'>GCH210691</span></td>
+			<td><span class='label label-primary'>Fall 2021</span></td>
+			<td><span class='label label-default'>02/10/2021</span></td>
+			<td><span class='label label-danger'>10,050,000</span></td>
+			<td><span>Level 4</span></td>
+		</tr>
+		
+	<tbody>
+		<tr>
+			<td><span class='label label-success'>23372-AA/21E</span></td>
+			<td><span class='label label-info'>GCH210691</span></td>
+			<td><span class='label label-primary'>Summer 2021</span></td>
+			<td><span class='label label-default'>05/01/2021</span></td>
+			<td><span class='label label-danger'>10,850,000</span></td>
+			<td><span>Level 3</span></td>
+		</tr>
+		
+	</tbody>
+</table>
+<br /> 
+    <div>
+
+</div>
+    <br/>
+    <b>Số tiền hiện tại trên hệ thống: <span id="ctl00_mainContent_lblTitleAccount">6,540,000</span> VNĐ</b>
+<input type="hidden" name="ctl00$mainContent$hfError" id="ctl00_mainContent_hfError" />   
+
+                    </div>
+                     <div id="ctl00_divSupport">
+                                                <table>
+                                                    <tr>
+                                                        <td align="left"> <strong>Mọi góp ý, thắc mắc xin liên hệ</strong>: Greenwich Việt Nam, cơ sở Hà Nội<br/>
+                                                            Địa chỉ: Tòa nhà Golden Park, số 2 Phạm Văn Bạch, phường Yên Hòa, quận Cầu Giấy, Hà Nội<br />
+                                                            Phòng TC&QLĐT: Điện thoại: <strong>024.730 66788</strong> (máy lẻ số 2), Email: <strong><a href="mailto:acad.gre.hn@fe.edu.vn">acad.gre.hn@fe.edu.vn</a></strong>
+                                                            <br />
+                                                            Phòng CTSV: Điện thoại: <strong>024.730 66788</strong> (máy lẻ số 1), Email: <strong><a href="mailto:sro.gre.hn@fe.edu.vn">sro.gre.hn@fe.edu.vn</a></strong><br />
+                                                            Bộ phận thu ngân: <strong>024.730 66788</strong> (máy lẻ số 3)</td>
+                                                        <td align="left"><strong>For more information or any queries, please contact:</strong>
+                                                            <br />
+                                                            Academic Affairs Department: Tel: <strong>024.730 66788</strong> (ext 2), Email: <strong><a href="mailto:acad.gre.hn@fe.edu.vn">acad.gre.hn@fe.edu.vn</a></strong>
+                                                            <br />
+                                                            Student Affairs Department: Tel: <strong>024.730 66788</strong> (ext 1), Email: <strong><a href="mailto:sro.gre.hn@fe.edu.vn">sro.gre.hn@fe.edu.vn</a></strong></td>
+                                                    </tr>
+                                                </table>
+                                               
+                                                
+                                            </div>
+
+                                            
+
+                                            
+                                            
+                
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("ctl00_mainContent_ucStartDate_CustomValidator1"), document.getElementById("ctl00_mainContent_ucEndDate_CustomValidator1"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ctl00_mainContent_ucStartDate_CustomValidator1 = document.all ? document.all["ctl00_mainContent_ucStartDate_CustomValidator1"] : document.getElementById("ctl00_mainContent_ucStartDate_CustomValidator1");
+ctl00_mainContent_ucStartDate_CustomValidator1.errormessage = "Date is not valid";
+ctl00_mainContent_ucStartDate_CustomValidator1.display = "Dynamic";
+ctl00_mainContent_ucStartDate_CustomValidator1.evaluationfunction = "CustomValidatorEvaluateIsValid";
+var ctl00_mainContent_ucEndDate_CustomValidator1 = document.all ? document.all["ctl00_mainContent_ucEndDate_CustomValidator1"] : document.getElementById("ctl00_mainContent_ucEndDate_CustomValidator1");
+ctl00_mainContent_ucEndDate_CustomValidator1.errormessage = "Date is not valid";
+ctl00_mainContent_ucEndDate_CustomValidator1.display = "Dynamic";
+ctl00_mainContent_ucEndDate_CustomValidator1.evaluationfunction = "CustomValidatorEvaluateIsValid";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        //]]>
+</script>
+</form>
+            </div>
+        </div>
+        <hr />
+        <p style="text-align: center">
+            © Powered by <a href="https://greenwich.edu.vn/" target="_blank">University of Greenwich</a>&nbsp;|&nbsp;
+    <a href="http://cms.greenwich.edu.vn/" target="_blank">CMS</a>
+        </p>
+    </div>
+</body>
+</html>
